@@ -1,6 +1,6 @@
 [package]
 name = "pkdx"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 description = "Pokedex TUI"
 repository = "https://github.com/sudosmile/pkdx"
@@ -9,3 +9,12 @@ license = "MIT OR Apache-2.0"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+tui = "0.19"
+crossterm = "0.25"
+
+log = "0.4"
+tui-logger = "0.8"
+
+tokio = { version = "1", features = ["full"] }
+
+eyre = "0.6"
