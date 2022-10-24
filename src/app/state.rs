@@ -1,10 +1,7 @@
 #[derive(Clone)]
 pub enum AppState {
     Init,
-    Initialized {
-        search: String,
-        counter_tick: u64,
-    },
+    Initialized { search: String, counter_tick: u64 },
 }
 
 impl AppState {

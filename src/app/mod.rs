@@ -84,10 +84,7 @@ impl App {
 
     pub fn initialized(&mut self) {
         // Update contextual actions
-        self.actions = vec![
-            Action::Quit,
-        ]
-        .into();
+        self.actions = vec![Action::Quit].into();
         self.state = AppState::initialized()
     }
 

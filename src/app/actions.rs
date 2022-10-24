@@ -13,9 +13,7 @@ pub enum Action {
 impl Action {
     /// All available actions
     pub fn iterator() -> Iter<'static, Action> {
-        static ACTIONS: [Action; 1] = [
-            Action::Quit,
-        ];
+        static ACTIONS: [Action; 1] = [Action::Quit];
         ACTIONS.iter()
     }
 
@@ -116,19 +114,12 @@ mod tests {
 
     #[test]
     fn should_create_actions_from_vec() {
-        let _actions: Actions = vec![
-            Action::Quit,
-        ]
-        .into();
+        let _actions: Actions = vec![Action::Quit].into();
     }
 
     #[test]
     #[should_panic]
     fn should_panic_when_create_actions_conflict_key() {
-        let _actions: Actions = vec![
-            Action::Quit,
-            Action::Quit,
-        ]
-        .into();
+        let _actions: Actions = vec![Action::Quit, Action::Quit].into();
     }
 }
