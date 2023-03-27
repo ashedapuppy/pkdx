@@ -13,7 +13,7 @@ tui = "0.19"
 crossterm = "0.25"
 
 log = "0.4"
-tui-logger = "0.8"
+tui-logger = "0.9"
 
 tokio = { version = "1", features = ["full"] }
 
