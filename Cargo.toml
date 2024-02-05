@@ -10,7 +10,7 @@ license = "MIT OR Apache-2.0"
 
 [dependencies]
 tui = "0.19"
-crossterm = "0.25"
+crossterm = "0.27"
 
 log = "0.4"
 tui-logger = "0.8"
